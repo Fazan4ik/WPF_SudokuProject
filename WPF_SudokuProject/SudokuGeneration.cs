@@ -403,7 +403,15 @@ namespace SudokuGeneration
             {
                 if (CanPlaceNumber(row, col, number))
                 {
-                    button.Content = number.ToString();
+                    if (number == 0)
+                    {
+                        button.Content = "-";
+                    }
+                    else
+                    {
+                        button.Content = number.ToString();
+
+                    }
                     grid[row, col] = number;
                 }
                 else
@@ -416,6 +424,5 @@ namespace SudokuGeneration
                 MessageBox.Show("Недопустиме значення.", "Помилка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
     }
 }
