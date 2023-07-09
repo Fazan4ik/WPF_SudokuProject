@@ -374,7 +374,7 @@ namespace SudokuGeneration
                     button.Click += SudokuButton_Click;
                     button.SetValue(Grid.RowProperty, i);
                     button.SetValue(Grid.ColumnProperty, j);
-                    button.Content = grid[i, j];
+                    button.Content = grid[i, j] == 0 ? "-" : grid[i, j].ToString();
 
                     if ((j) % 3 == 0)
                         button.Margin = new Thickness(button.Margin.Left + additionalMargin, button.Margin.Top, button.Margin.Right, button.Margin.Bottom);
