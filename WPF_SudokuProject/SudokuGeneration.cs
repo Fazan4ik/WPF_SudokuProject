@@ -369,7 +369,16 @@ namespace SudokuGeneration
                     button.Width = 50;
                     button.Height = 50;
                     button.Margin = new Thickness(defaultMargin);
-                    button.Click += SudokuButton_Click;
+                    if (grid[i, j] != 0)
+                    {
+                        button.Background = Brushes.Red;
+                    }
+                    else
+                    {
+                        button.Click += SudokuButton_Click;
+                        button.Background = Brushes.Green;
+                    }
+                    // button.Click += SudokuButton_Click;
                     button.SetValue(Grid.RowProperty, i);
                     button.SetValue(Grid.ColumnProperty, j);
                     button.Content = grid[i, j] == 0 ? "-" : grid[i, j].ToString();
