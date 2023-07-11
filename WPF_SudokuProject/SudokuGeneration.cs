@@ -194,9 +194,7 @@ namespace SudokuGeneration
         {
             if (IsSolved())
             {
-                MessageBox.Show($"Ви пройшли судоку, ви геній!", "Свято", MessageBoxButton.OK, MessageBoxImage.Information);
                 return true;
-
             }
             return false;
         }

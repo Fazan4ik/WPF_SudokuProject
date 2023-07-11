@@ -89,7 +89,7 @@ namespace WPF_SudokuProject
 
         private async void HardLevelButton_Click(object sender, RoutedEventArgs e)
         {
-            MainMenuGrid.Visibility = Visibility.Collapsed;
+            GameGrid.Visibility = Visibility.Collapsed;
             SudokuGame.Visibility = Visibility.Visible;
             startTime = DateTime.Now;
             timer.Start();
@@ -107,9 +107,12 @@ namespace WPF_SudokuProject
         }
         private void EndGame()
         {
+            timer.Stop();
+            TimeSpan elapsed = DateTime.Now - startTime;
+            string message = $"Ви пройшли судоку, ви геній! Затрачений час: {elapsed:mm\\:ss}";
+            MessageBox.Show(message, "Свято", MessageBoxButton.OK, MessageBoxImage.Information);
             SudokuGame.Visibility = Visibility.Collapsed;
             MainMenuGrid.Visibility = Visibility.Visible;
-            timer.Stop();
         }
 
         private void ExitToMainMenuButton_Click(object sender, RoutedEventArgs e)
