@@ -11,6 +11,9 @@
 саме судоку при виборі любой важкості, має таймер зверху який поки що ні на що не впливає, Червоні змінювати неможливо, зелені можливо
 ![image](https://github.com/Fazan4ik/WPF_SudokuProject/assets/91279825/c2442e71-475f-441a-8348-16228076849d)
 
+Якщо тикаємо по кнопці
+![image](https://github.com/Fazan4ik/WPF_SudokuProject/assets/91279825/e0ba7789-0bac-4ad2-ac8a-0cd8e51747b6)
+
 
 Якщо проходимо судоку, то виводе це та відправляє в головне меню
 ![image](https://github.com/Fazan4ik/WPF_SudokuProject/assets/91279825/1fc341c8-9aa7-472c-99fe-4aa44d0ca6f0)
