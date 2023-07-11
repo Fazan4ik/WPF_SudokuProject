@@ -10,3 +10,6 @@
 
 саме судоку при виборі любой важкості, має таймер зверху який поки що ні на що не впливає
 ![image](https://github.com/Fazan4ik/WPF_SudokuProject/assets/91279825/7c7d816e-de63-4e25-94b6-f6c8ec104755)
+
+Якщо проходимо судоку, то виводе це та відправляє в головне меню
+![image](https://github.com/Fazan4ik/WPF_SudokuProject/assets/91279825/1fc341c8-9aa7-472c-99fe-4aa44d0ca6f0)
